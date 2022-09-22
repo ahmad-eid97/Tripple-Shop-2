@@ -1,0 +1,70 @@
+@import '../../../styles/mixins.scss';
+
+.topNav {
+  background-color: var(--main-color);
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 5px 20px;
+    span {
+      font-size: 0.9rem;
+    }
+    .navbar__search__searchArea {
+      input {
+        width: 650px;
+        height: 40px;
+        padding: 8px 20px;
+        border: 1px solid #000;
+        outline: none;
+      }
+      button {
+        height: 40px;
+        width: 50px;
+        background-color: #000;
+        text-align: center !important;
+        color: #fff;
+      }
+      @include xl {
+        input {
+          width: 550px;
+        }
+      }
+      @include lg {
+        input {
+          width: 300px;
+        }
+      }
+      &.rounded {
+        input {
+          border-radius: 20px 0 0 20px;
+        }
+        button {
+          border-radius: 0 20px 20px 0;
+        }
+        &.ar {
+          input {
+            border-radius: 0px 20px 20px 0px;
+          }
+          button {
+            border-radius: 20px 0px 0px 20px;
+          }
+        }
+      }
+    }
+    .options {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      span {
+        padding: 0 10px;
+        border-left: 1px solid rgb(224, 224, 224);
+        cursor: pointer;
+      }
+    }
+  }
+  @include md {
+    display: none;
+  }
+}

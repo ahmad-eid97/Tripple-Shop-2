@@ -1,0 +1,31 @@
+@import '../../../styles/mixins.scss';
+
+.categories {
+  margin-bottom: 50px;
+  .categories__head {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+  }
+
+  .categories__allCategories {
+    padding: 30px 20px;
+    background-color: var(--secondary-background);
+    .singleCategory {
+      margin: 10px;
+      cursor: pointer;
+      img {
+        height: 170px;
+        width: 170px;
+        object-fit: contain;
+      }
+      h5 {
+        text-align: center !important;
+      }
+      &:hover {
+        border-color: var(--main-color);
+      }
+    }
+  }
+}
