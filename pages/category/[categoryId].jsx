@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { CategoryFilter, TopProducts, TopFilterNav, CategoryProducts, PagesNavHeader } from '../../components';
+import { CategoryFilter, TopFilterNav, CategoryProducts, PagesNavHeader } from '../../components';
 
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
@@ -53,8 +53,6 @@ const Category = () => {
           </Grid>
 
         </Grid>
-
-        <TopProducts />
 
       </Container>
 

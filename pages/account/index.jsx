@@ -48,7 +48,7 @@ const Account = () => {
   return (
     <div className={cls.account}>
       <Container maxWidth="xxl">
-        <PagesNavHeader steps={[`${t('account.account')}`]} />
+        {/* <PagesNavHeader steps={[`${t('account.account')}`]} /> */}
 
         <div className={cls.account__wrapper}>
           <div className={cls.mobileNav}>

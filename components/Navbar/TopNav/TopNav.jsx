@@ -13,7 +13,7 @@ const TopNav = () => {
   return (
     <div className={cls.topNav}>
       <div className={`${cls.wrapper}`}>
-        <div>
+        <div onClick={() => router.push('/')}>
           <h3>Tripple shop</h3>
         </div>
 

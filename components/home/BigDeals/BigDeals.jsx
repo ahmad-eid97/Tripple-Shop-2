@@ -6,7 +6,7 @@ import cls from './bigDeals.module.scss'
 
 const BigDeals = () => {
   return (
-    <div className={cls.bigDeals}>
+    <div className={cls.bigDeals}>~
 
       <Container maxWidth="xxl">
 

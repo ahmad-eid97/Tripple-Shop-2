@@ -2,6 +2,7 @@
 import { useRouter } from 'next/router';
 
 import Rating from '@mui/material/Rating';
+import Tooltip from '@mui/material/Tooltip';
 
 import { useTranslation } from 'next-i18next';
 
@@ -14,7 +15,7 @@ const ProductList = () => {
   return (
     <section className={cls.productList}>
 
-      <div className={`${cls.newBadge} ${cls[i18n.language]}`}>
+      {/* <div className={`${cls.newBadge} ${cls[i18n.language]}`}>
 
         <span><i className="fa-regular fa-stars"></i> {t('product.new')}</span>
 
@@ -25,6 +26,14 @@ const ProductList = () => {
         <span>{t('product.off')}</span>
 
         <p>10%</p>
+
+      </div> */}
+
+      <div className={cls.wishlistBadge}>
+
+        <Tooltip title="Add to wishlist" placement="top">
+          <i className="fa-light fa-heart"></i>
+        </Tooltip>
 
       </div>
 
@@ -38,15 +47,9 @@ const ProductList = () => {
 
           <h5 onClick={() => router.push('/product/123')}>Dell Vostro 3500 laptop - 11th Intel core i7-1165G7, 8GB RAM, 1TB HDD</h5>
 
-          <Rating name="read-only" value={4} readOnly />
+          <span><i className="fa-solid fa-star"></i> 4.5</span>
 
-          <ul>
-            <li>Intel Core i5 processors (13-inch model)</li>
-            <li>Intel Iris Graphics 6100 (13-inch model)</li>
-            <li>Flash storage</li>
-            <li>Up to 10 hours of battery life2 (13-inch model)</li>
-            <li>Force Touch trackpad (13-inch model)</li>
-          </ul>
+          <p>express</p>
 
         </div>
 
@@ -63,13 +66,13 @@ const ProductList = () => {
 
         <button className={cls.addBtn}>{t('product.addCart')}</button>
 
-        <div className={cls.productList__actions_extra}>
+        {/* <div className={cls.productList__actions_extra}>
 
           <button><i className="fa-light fa-heart"></i> {t('product.wishlist')}</button>
 
           <button><i className="fa-light fa-code-compare"></i> {t('product.compare')}</button>
 
-        </div>
+        </div> */}
 
       </div>
 

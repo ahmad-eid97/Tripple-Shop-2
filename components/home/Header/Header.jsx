@@ -13,9 +13,10 @@ const Header = () => {
       <div className={cls.header_wrapper}>
 
         <Container maxWidth="xxl">
-          <Carousel className={`${cls.header__slider} header__slider`} autoPlay={true} showIndicators={false} infiniteLoop={true} showArrows={true} swipeable={true} showStatus={false} interval={5000}>
+          <Carousel className={`${cls.header__slider} header__slider`} autoPlay={true} showThumbs={false} showIndicators={false} infiniteLoop={true} showArrows={true} swipeable={true} showStatus={false} interval={5000}>
               <div className={`${cls.slide} slide`}>
-                <Grid container alignItems="center" spacing={5}>
+                <img src="/imgs/category/head1.avif" alt="headImage" />
+                {/* <Grid container alignItems="center" spacing={5}>
                   <Grid item xs={12} md={6}>
                     <h5 className={cls.label}>SHOP WHAT YOU LOVE</h5>
                     <h1 className={cls.title}>The New Standard</h1>
@@ -27,10 +28,11 @@ const Header = () => {
                   <Grid item xs={12} md={6}>
                     <img src="/imgs/header/Smartwatchess.png" alt="offerImage" />
                   </Grid>
-                </Grid>
+                </Grid> */}
               </div>
               <div className={`${cls.slide} slide`}>
-                <Grid container alignItems="center">
+                <img src="/imgs/category/head2.avif" alt="headImage" />
+                {/* <Grid container alignItems="center">
                   <Grid item xs={12}  md={6}>
                     <h5 className={cls.label}>SHOP WHAT YOU LOVE</h5>
                     <h1 className={cls.title}>The New Standard</h1>
@@ -42,10 +44,11 @@ const Header = () => {
                   <Grid item xs={12}  md={6}>
                     <img src="/imgs/header/Smartphones.png" alt="offerImage" />
                   </Grid>
-                </Grid>
+                </Grid> */}
               </div>
               <div className={`${cls.slide} slide`}>
-                <Grid container alignItems="center">
+                <img src="/imgs/category/head3.avif" alt="headImage" />
+                {/* <Grid container alignItems="center">
                   <Grid item xs={12} md={6}>
                     <h5 className={cls.label}>SHOP WHAT YOU LOVE</h5>
                     <h1 className={cls.title}>The New Standard</h1>
@@ -57,7 +60,7 @@ const Header = () => {
                   <Grid item xs={12} md={6}>
                     <img src="/imgs/header/iphone.png" alt="offerImage" />
                   </Grid>
-                </Grid>
+                </Grid> */}
               </div>
           </Carousel>
         </Container>

@@ -1,0 +1,40 @@
+@import '../../../styles/mixins.scss';
+
+.categoryDeals {
+  h1 {
+    text-align: center !important;
+    font-size: 3rem;
+    @include xs {
+      font-size: 2rem;
+    }
+  }
+  h2 {
+    text-align: center !important;
+    @include xs {
+      font-size: 1.5rem;
+    }
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    button {
+      padding: 10px 30px;
+      border: 1px solid #000;
+      background-color: var(--secondary-background);
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+
+  img {
+    object-fit: contain;
+    &.bigImage {
+      height: 400px;
+      @include xs {
+        height: 250px;
+      }
+    }
+  }
+}

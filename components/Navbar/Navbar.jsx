@@ -59,7 +59,7 @@ const Navbar = ({ rounded }) => {
               className="fa-light fa-grid-2"
               onClick={() => setOpenSidebar(!openSidebar)}
             ></i>{" "}
-            <h5>{t('nav.logo')}</h5>
+            <h5 onClick={() => router.push('/')}>{t('nav.logo')}</h5>
           </div>
 
           <div className={cls.links}>

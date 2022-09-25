@@ -45,6 +45,10 @@ export { default as CategoryProducts } from './category/CategoryProducts/Categor
 
 export { default as TopFilterNav } from './category/TopFilterNav/TopFilterNav';
 
+export { default as CategoryDeals } from './categoryDetails/CategoryDeals/CategoryDeals';
+
+export { default as CategoryDealsTwo } from './categoryDetails/CategoryDealsTwo/CategoryDealsTwo';
+
 // PRODUCT DETAILS COMPONENT
 export { default as ProductDetails } from './productDetails/ProductDetails/ProductDetails';
 
@@ -74,3 +78,6 @@ export { default as AddressesTab } from './account/AddressesTab/AddressesTab';
 export { default as AccountMobSidebar } from './account/AccountMobSidebar/AccountMobSidebar';
 
 export { default as AddAddress } from './modals/AddAddress/AddAddress';
+
+// BRANDS COMPONENTS
+export { default as Brands } from './Brands/Brands';

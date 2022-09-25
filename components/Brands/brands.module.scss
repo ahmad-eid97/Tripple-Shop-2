@@ -1,0 +1,29 @@
+@import '../../styles/mixins.scss';
+
+.brands {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-align: center !important;
+    margin-bottom: 40px;
+    @include xs {
+      font-size: 1.5rem;
+    }
+  }
+
+  div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    img {
+      object-fit: contain;
+      width: 200px;
+      margin: auto;
+      @include sm {
+        width: 120px;
+      }
+    }
+  }
+}

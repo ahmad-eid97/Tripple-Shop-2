@@ -9,7 +9,7 @@ import ProductList from "../../ProductList/ProductList";
 
 import cls from "./categoryProducts.module.scss";
 
-const products = [{}, {}, {}, {}, {}, {}];
+const products = [{}, {}, {}, {}, {}, {}, {}, {}, {}];
 
 const CategoryProducts = ({ viewType }) => {
   const [pageNumber, setPageNumber] = useState(1);
@@ -26,9 +26,9 @@ const CategoryProducts = ({ viewType }) => {
         <>
           {viewType === "grid" ? (
             <>
-              <Grid container columnSpacing={3}>
+              <Grid container spacing={3}>
                 {products.map((product, idx) => (
-                  <Grid item xs={12} sm={6} md={6} lg={6} xl={4} key={idx}>
+                  <Grid item xs={12} sm={6} md={6} lg={6} xl={3} key={idx}>
                     <ProductBox />
                   </Grid>
                 ))}

@@ -108,8 +108,8 @@
               position: absolute;
               z-index: 9999;
               top: 80%;
-              left: 0;
-              width: 100%;
+              left: 1%;
+              width: 60%;
               min-height: 400px;
               background-color: var(--secondary-background);
               box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -145,6 +145,10 @@
             li {
               border-right: unset;
               // border-left: 1px solid #e0e0e0;
+            }
+            .pagesDropdown {
+              left: unset;
+              right: 1%;
             }
           }
 
@@ -223,7 +227,6 @@
               left: 0;
               width: 100%;
               display: flex;
-              justify-content: space-between;
               button {
                 flex: 1;
                 text-align: center !important;

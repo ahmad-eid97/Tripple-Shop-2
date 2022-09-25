@@ -24,11 +24,14 @@
         display: none;
       }
       &.active {
-        font-weight: bold;
-        border-bottom: 3px solid var(--text-color);
-        span {
-          display: block;
-        }
+        // font-weight: bold;
+        // border-bottom: 3px solid var(--text-color);
+        // span {
+        //   display: block;
+        // }
+        background-color: #000;
+        color: #fff;
+        padding: 8px 25px;
       }
     }
     @include xs {

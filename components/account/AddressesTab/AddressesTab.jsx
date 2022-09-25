@@ -4,6 +4,7 @@ import { useState } from 'react';
 import AddAddress from '../../modals/AddAddress/AddAddress';
 
 import Grid from '@mui/material/Grid';
+import Switch from '@mui/material/Switch';
 
 import { toast } from 'react-toastify';
 
@@ -32,44 +33,90 @@ const AddressesTab = () => {
 
       <Grid container spacing={3}>
 
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12}>
 
           <div className={cls.address}>
 
-            <i className={`fa-solid fa-star ${selectedAddress === 'one' ? cls.active : ''} ${cls[i18n.language]}`} onClick={() => setAddressActive('one')}></i>
+            <Grid container>
 
-            <p><i className="fa-light fa-print"></i> Home</p>
-            <p><i className="fa-regular fa-location-dot"></i> Egypt, Sohag</p>
-            <p><i className="fa-regular fa-phone"></i> 01025864313</p>
-            <p><i className="fa-light fa-mailbox"></i> 123456</p>
+              <Grid item xs={12} md={6}>
 
-            <div className={cls.addressActions}>
-              <button><i className="fa-regular fa-trash-can-list"></i> {t('account.remove')}</button>
-              <i className="fa-regular fa-pen-to-square" onClick={() => setOpenAddAddress(true)}></i>
-            </div>
+                <h4>Location details</h4>
 
-          </div>
+                <div className={cls.location}>
 
-        </Grid>
+                  <img src="/imgs/account/map.jpg" alt="mapImage" />
 
-        <Grid item xs={12} sm={6} md={4}>
+                  <div>
 
-          <div className={cls.address}>
+                    <h6>Sohag, Egypt sohag second - sohag governorate</h6>
 
-            <i className={`fa-solid fa-star ${selectedAddress === 'two' ? cls.active : ''} ${cls[i18n.language]}`} onClick={() => setAddressActive('two')}></i>
+                    <p>Sohag</p>
+                    
+                  </div>
 
-            <p><i className="fa-light fa-print"></i> Home</p>
+                </div>
 
-            <p><i className="fa-regular fa-location-dot"></i> Egypt, Sohag</p>
+                <div className={cls.home}>
 
-            <p><i className="fa-regular fa-phone"></i> 01025864313</p>
+                  <h4>Address label</h4>
 
-            <p><i className="fa-light fa-mailbox"></i> 123456</p>
+                  <div>
+                    <input type="radio" name="address" />
+                    <label htmlFor="">Home</label>
+                  </div>
 
-            <div className={cls.addressActions}>
-              <button><i className="fa-regular fa-trash-can-list"></i> {t('account.remove')}</button>
-              <i className="fa-regular fa-pen-to-square" onClick={() => setOpenAddAddress(true)}></i>
-            </div>
+                  <div>
+                    <input type="radio" name="address" />
+                    <label htmlFor="">Work</label>
+                  </div>
+
+                </div>
+
+                <div className={cls.defaultAddress}>
+
+                  <Switch />
+
+                  <p>Set as default address</p>
+
+                </div>
+
+              </Grid>
+
+              <Grid item xs={12} md={6}>
+
+                <h4>Your contact details</h4>
+
+                <div className={cls.field}>
+
+                  <label htmlFor="">Phone number</label>
+                  <input type="number" placeholder='Phone number' />
+
+                </div>
+
+                <div className={cls.field}>
+
+                  <label htmlFor="">First name</label>
+                  <input type="text" placeholder='First name' />
+
+                </div>
+
+                <div className={cls.field}>
+
+                  <label htmlFor="">Last name</label>
+                  <input type="text" placeholder='Last name' />
+
+                </div>
+
+                <div className={cls.btn}>
+
+                  <button>Save Address</button>
+
+                </div>
+
+              </Grid>
+
+            </Grid>
 
           </div>
 

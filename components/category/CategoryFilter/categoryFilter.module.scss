@@ -1,5 +1,5 @@
 .categoryfilter {
-  .categoriesList, .priceFilter, .relatedProducts {
+  .categoriesList, .priceFilter, .relatedProducts, .brandsList, .variantsList, .colorList {
     background-color: var(--secondary-background);
     padding-bottom: 15px;
     border: 1px solid var(--border-color);
@@ -15,6 +15,52 @@
         cursor: pointer;
         &:hover {
           background-color: var(--hover-color);
+        }
+      }
+    }
+    &.brandsList {
+      margin-top: 20px;
+      span {
+        padding: 0 10px;
+      }
+    }
+    &.variantsList {
+      margin-top: 20px;
+      .wrapper {
+        padding: 10px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        span {
+          display: block;
+          padding: 5px 20px;
+          background-color: var(--default-background);
+          margin: 5px;
+          cursor: pointer;
+          border: 1px solid var(--border-color);
+          &:hover {
+            background-color: var(--main-color);
+            color: #fff;
+          }
+        }
+      }
+    }
+    &.colorList {
+      margin-top: 20px;
+      .wrapper {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        span {
+          display: block;
+          background-color: var(--alert);
+          margin: 5px;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          &:hover {
+            border: 1px solid #000;
+          }
         }
       }
     }

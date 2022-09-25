@@ -6,7 +6,7 @@
   align-items: flex-start;
   justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
-  padding: 40px 20px;
+  padding: 20px;
   gap: 10px;
   cursor: pointer;
   position: relative;
@@ -15,6 +15,17 @@
   }
   @include sm {
     display: block;
+  }
+
+  .wishlistBadge {
+    position: absolute;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--border-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
   }
 
   .newBadge {
@@ -95,10 +106,22 @@
     
     span {
       font-size: 1.1rem;
+      display: block;
+      margin-bottom: 10px;
       &.label {
         font-size: 1rem;
         opacity: 0.7;
       }
+    }
+
+    p {
+      display: inline;
+      background-color: var(--alert);
+      color: #000;
+      padding: 0px 20px;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      opacity: 0.8;
     }
 
     ul {
