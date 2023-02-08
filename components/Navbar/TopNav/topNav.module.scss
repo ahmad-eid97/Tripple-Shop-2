@@ -8,6 +8,9 @@
     justify-content: space-between;
     color: #fff;
     padding: 5px 20px;
+    .bigImage {
+      height: 70px;
+    }
     h3 {
       cursor: pointer;
     }
@@ -16,7 +19,7 @@
     }
     .navbar__search__searchArea {
       input {
-        width: 650px;
+        width: 550px;
         height: 40px;
         padding: 8px 20px;
         border: 1px solid #000;
@@ -31,12 +34,12 @@
       }
       @include xl {
         input {
-          width: 550px;
+          width: 450px;
         }
       }
       @include lg {
         input {
-          width: 300px;
+          width: 250px;
         }
       }
       &.rounded {

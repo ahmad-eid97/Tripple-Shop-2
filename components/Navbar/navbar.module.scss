@@ -15,7 +15,7 @@
     
     .navbar__search__searchArea {
       input {
-        width: 750px;
+        width: 550px;
         height: 40px;
         padding: 8px 20px;
         border: 1px solid #000;
@@ -77,6 +77,9 @@
       padding: 0 20px;
       .smallLogo {
         display: none;
+        .bigImage {
+          height: 55px;
+        }
       }
       .switches {
         display: flex;
@@ -256,6 +259,8 @@
         }
       }
       @include md {
+        padding-top: 5px;
+        padding-bottom: 5px;
         .smallLogo {
           display: inline;
           // color: #fff;

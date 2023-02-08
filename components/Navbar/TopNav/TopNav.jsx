@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 import Container from '@mui/material/Container';
 
@@ -13,12 +15,22 @@ const TopNav = () => {
   return (
     <div className={cls.topNav}>
       <div className={`${cls.wrapper}`}>
-        <div onClick={() => router.push('/')}>
-          <h3>Tripple shop</h3>
+        <div onClick={() => router.push("/")}>
+          <Link href="/">
+            <img
+              className={cls.bigImage}
+              src="./imgs/logos/whiteSmallLogo.png"
+              alt="tripple-shop-logo"
+            />
+          </Link>
         </div>
 
-        <div className={`${cls.navbar__search__searchArea} ${cls.rounded} ${cls[i18n.language]}`}>
-          <input type="text" placeholder={t('nav.search')} />
+        <div
+          className={`${cls.navbar__search__searchArea} ${cls.rounded} ${
+            cls[i18n.language]
+          }`}
+        >
+          <input type="text" placeholder={t("nav.search")} />
 
           <button>
             <i className="fa-light fa-magnifying-glass"></i>
@@ -26,14 +38,22 @@ const TopNav = () => {
         </div>
 
         <div className={cls.options}>
-          <span><i className="fa-light fa-location-dot"></i> {t('nav.store')}</span>
-          <span onClick={() => router.push('/track-order')}><i className="fa-light fa-truck"></i> {t('nav.track')}</span>
-          <span><i className="fa-light fa-bag-shopping"></i> {t('nav.shop')}</span>
-          <span onClick={() => router.push('/account')}><i className="fa-light fa-user"></i> {t('nav.account')}</span>
+          <span>
+            <i className="fa-light fa-location-dot"></i> {t("nav.store")}
+          </span>
+          <span onClick={() => router.push("/track-order")}>
+            <i className="fa-light fa-truck"></i> {t("nav.track")}
+          </span>
+          <span>
+            <i className="fa-light fa-bag-shopping"></i> {t("nav.shop")}
+          </span>
+          <span onClick={() => router.push("/account")}>
+            <i className="fa-light fa-user"></i> {t("nav.account")}
+          </span>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default TopNav
